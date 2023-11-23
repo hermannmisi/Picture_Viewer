@@ -1,0 +1,16 @@
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture_Viewer.Viewer.resources
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.csproj.GenerateResource.cache
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.AssemblyInfoInputs.cache
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.AssemblyInfo.cs
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.csproj.CoreCompileInputs.cache
+D:\Misi\Fejlesztesek\Picture Viewer\bin\Debug\net8.0-windows\Picture Viewer.exe
+D:\Misi\Fejlesztesek\Picture Viewer\bin\Debug\net8.0-windows\Picture Viewer.deps.json
+D:\Misi\Fejlesztesek\Picture Viewer\bin\Debug\net8.0-windows\Picture Viewer.runtimeconfig.json
+D:\Misi\Fejlesztesek\Picture Viewer\bin\Debug\net8.0-windows\Picture Viewer.dll
+D:\Misi\Fejlesztesek\Picture Viewer\bin\Debug\net8.0-windows\Picture Viewer.pdb
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.dll
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\refint\Picture Viewer.dll
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.pdb
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.genruntimeconfig.cache
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\ref\Picture Viewer.dll
