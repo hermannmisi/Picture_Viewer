@@ -1,0 +1,15 @@
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\bin\Debug\net8.0-windows\FileOperations.deps.json
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\bin\Debug\net8.0-windows\FileOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\bin\Debug\net8.0-windows\FileOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\bin\Debug\net8.0-windows\LanguageOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\bin\Debug\net8.0-windows\LanguageOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.csproj.AssemblyReference.cache
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.AssemblyInfoInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.AssemblyInfo.cs
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.csproj.CoreCompileInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.csproj.CopyComplete
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\refint\FileOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\FileOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\FileOperations\obj\Debug\net8.0-windows\ref\FileOperations.dll
