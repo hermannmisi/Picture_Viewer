@@ -14,3 +14,4 @@ D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\refint\Picture View
 D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.pdb
 D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.genruntimeconfig.cache
 D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\ref\Picture Viewer.dll
+D:\Misi\Fejlesztesek\Picture Viewer\obj\Debug\net8.0-windows\Picture Viewer.sourcelink.json

@@ -1,0 +1,25 @@
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Picture Viewer.exe
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Picture Viewer.deps.json
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Picture Viewer.runtimeconfig.json
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Picture Viewer.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Picture Viewer.pdb
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\Microsoft.Windows.SDK.NET.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\WinRT.Runtime.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\FileOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\LanguageOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\FileOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\bin\Debug\net8.0-windows10.0.20348.0\LanguageOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.csproj.AssemblyReference.cache
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture_Viewer.Viewer.resources
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.csproj.GenerateResource.cache
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.AssemblyInfoInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.AssemblyInfo.cs
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.csproj.CoreCompileInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.sourcelink.json
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.csproj.CopyComplete
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\refint\Picture Viewer.dll
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.pdb
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\Picture Viewer.genruntimeconfig.cache
+D:\Misi\Fejlesztesek\OpenSource\Picture Viewer\obj\Debug\net8.0-windows10.0.20348.0\ref\Picture Viewer.dll

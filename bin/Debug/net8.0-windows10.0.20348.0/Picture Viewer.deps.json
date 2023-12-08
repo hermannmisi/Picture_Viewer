@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Picture Viewer/1.0.0": {
+        "dependencies": {
+          "FileOperations": "1.0.0",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.20348.31"
+        },
+        "runtime": {
+          "Picture Viewer.dll": {}
+        }
+      },
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.20348.31": {
+        "runtime": {
+          "Microsoft.Windows.SDK.NET.dll": {
+            "assemblyVersion": "10.0.20348.24",
+            "fileVersion": "10.0.20348.31"
+          },
+          "WinRT.Runtime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.4.44211"
+          }
+        }
+      },
+      "FileOperations/1.0.0": {
+        "dependencies": {
+          "LanguageOperations": "1.0.0"
+        },
+        "runtime": {
+          "FileOperations.dll": {}
+        }
+      },
+      "LanguageOperations/1.0.0": {
+        "runtime": {
+          "LanguageOperations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Picture Viewer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.20348.31": {
+      "type": "runtimepack",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileOperations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LanguageOperations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

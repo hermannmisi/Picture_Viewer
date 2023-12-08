@@ -1,3 +1,4 @@
+
 namespace Picture_Viewer
 {
     internal static class Program
@@ -13,12 +14,9 @@ namespace Picture_Viewer
             ApplicationConfiguration.Initialize();
             if (args.Length == 0)
             {
-                Application.Run(new Viewer());
+                args = new string[1];
             }
-            else
-            {
-                Application.Run(new Viewer(args[0]));
-            }
+            Application.Run(new Viewer(args[0]));
         }
     }
 }
