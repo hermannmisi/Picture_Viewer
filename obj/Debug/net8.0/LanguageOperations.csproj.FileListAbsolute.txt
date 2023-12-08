@@ -1,0 +1,11 @@
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\bin\Debug\net8.0\LanguageOperations.deps.json
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\bin\Debug\net8.0\LanguageOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\bin\Debug\net8.0\LanguageOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.AssemblyInfoInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.AssemblyInfo.cs
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.csproj.CoreCompileInputs.cache
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\refint\LanguageOperations.dll
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\LanguageOperations.pdb
+D:\Misi\Fejlesztesek\OpenSource\LanguageOperations\obj\Debug\net8.0\ref\LanguageOperations.dll
