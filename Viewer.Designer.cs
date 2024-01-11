@@ -30,12 +30,15 @@
         {
             PicBx = new PictureBox();
             menu = new MenuStrip();
-            fileMenuItem = new ToolStripMenuItem();
-            openSubMenuItem = new ToolStripMenuItem();
-            exitSubMenuItem = new ToolStripMenuItem();
-            settingsMenuItem = new ToolStripMenuItem();
-            aboutMenuItem = new ToolStripMenuItem();
+            MenuItemFile = new ToolStripMenuItem();
+            SubMenuItemOpen = new ToolStripMenuItem();
+            SubMenuItemExit = new ToolStripMenuItem();
+            MenuItemSettings = new ToolStripMenuItem();
+            MenuItemHelp = new ToolStripMenuItem();
+            SubMenuItemUpdate = new ToolStripMenuItem();
+            SubMenuItemAbout = new ToolStripMenuItem();
             lblActualImageFilePath = new Label();
+            MenuItemLanguage = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)PicBx).BeginInit();
             menu.SuspendLayout();
             SuspendLayout();
@@ -51,43 +54,57 @@
             // 
             // menu
             // 
-            menu.Items.AddRange(new ToolStripItem[] { fileMenuItem, settingsMenuItem, aboutMenuItem });
+            menu.Items.AddRange(new ToolStripItem[] { MenuItemFile, MenuItemLanguage, MenuItemSettings, MenuItemHelp });
             menu.Location = new Point(0, 0);
             menu.Name = "menu";
             menu.Size = new Size(800, 24);
             menu.TabIndex = 1;
             menu.Text = "menuStrip1";
             // 
-            // fileMenuItem
+            // MenuItemFile
             // 
-            fileMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openSubMenuItem, exitSubMenuItem });
-            fileMenuItem.Name = "fileMenuItem";
-            fileMenuItem.Size = new Size(35, 20);
-            fileMenuItem.Text = "file";
+            MenuItemFile.DropDownItems.AddRange(new ToolStripItem[] { SubMenuItemOpen, SubMenuItemExit });
+            MenuItemFile.Name = "MenuItemFile";
+            MenuItemFile.Size = new Size(35, 20);
+            MenuItemFile.Text = "file";
             // 
-            // openSubMenuItem
+            // SubMenuItemOpen
             // 
-            openSubMenuItem.Name = "openSubMenuItem";
-            openSubMenuItem.Size = new Size(101, 22);
-            openSubMenuItem.Text = "open";
+            SubMenuItemOpen.Name = "SubMenuItemOpen";
+            SubMenuItemOpen.Size = new Size(180, 22);
+            SubMenuItemOpen.Text = "open";
             // 
-            // exitSubMenuItem
+            // SubMenuItemExit
             // 
-            exitSubMenuItem.Name = "exitSubMenuItem";
-            exitSubMenuItem.Size = new Size(101, 22);
-            exitSubMenuItem.Text = "exit";
+            SubMenuItemExit.Name = "SubMenuItemExit";
+            SubMenuItemExit.Size = new Size(180, 22);
+            SubMenuItemExit.Text = "exit";
+            SubMenuItemExit.Click += ExitSubMenuItem_Click;
             // 
-            // settingsMenuItem
+            // MenuItemSettings
             // 
-            settingsMenuItem.Name = "settingsMenuItem";
-            settingsMenuItem.Size = new Size(60, 20);
-            settingsMenuItem.Text = "settings";
+            MenuItemSettings.Name = "MenuItemSettings";
+            MenuItemSettings.Size = new Size(60, 20);
+            MenuItemSettings.Text = "settings";
             // 
-            // aboutMenuItem
+            // MenuItemHelp
             // 
-            aboutMenuItem.Name = "aboutMenuItem";
-            aboutMenuItem.Size = new Size(50, 20);
-            aboutMenuItem.Text = "about";
+            MenuItemHelp.DropDownItems.AddRange(new ToolStripItem[] { SubMenuItemUpdate, SubMenuItemAbout });
+            MenuItemHelp.Name = "MenuItemHelp";
+            MenuItemHelp.Size = new Size(50, 20);
+            MenuItemHelp.Text = "about";
+            // 
+            // SubMenuItemUpdate
+            // 
+            SubMenuItemUpdate.Name = "SubMenuItemUpdate";
+            SubMenuItemUpdate.Size = new Size(180, 22);
+            SubMenuItemUpdate.Text = "update";
+            // 
+            // SubMenuItemAbout
+            // 
+            SubMenuItemAbout.Name = "SubMenuItemAbout";
+            SubMenuItemAbout.Size = new Size(180, 22);
+            SubMenuItemAbout.Text = "about";
             // 
             // lblActualImageFilePath
             // 
@@ -97,6 +114,12 @@
             lblActualImageFilePath.Size = new Size(38, 15);
             lblActualImageFilePath.TabIndex = 2;
             lblActualImageFilePath.Text = "label1";
+            // 
+            // MenuItemLanguage
+            // 
+            MenuItemLanguage.Name = "MenuItemLanguage";
+            MenuItemLanguage.Size = new Size(68, 20);
+            MenuItemLanguage.Text = "language";
             // 
             // Viewer
             // 
@@ -125,11 +148,14 @@
 
         private PictureBox PicBx;
         private MenuStrip menu;
-        private ToolStripMenuItem fileMenuItem;
-        private ToolStripMenuItem openSubMenuItem;
-        private ToolStripMenuItem exitSubMenuItem;
-        private ToolStripMenuItem settingsMenuItem;
-        private ToolStripMenuItem aboutMenuItem;
+        private ToolStripMenuItem MenuItemFile;
+        private ToolStripMenuItem SubMenuItemOpen;
+        private ToolStripMenuItem SubMenuItemExit;
+        private ToolStripMenuItem MenuItemSettings;
+        private ToolStripMenuItem MenuItemHelp;
         private Label lblActualImageFilePath;
+        private ToolStripMenuItem SubMenuItemUpdate;
+        private ToolStripMenuItem SubMenuItemAbout;
+        private ToolStripMenuItem MenuItemLanguage;
     }
 }

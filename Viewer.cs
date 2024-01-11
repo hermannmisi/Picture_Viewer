@@ -1,27 +1,30 @@
 using System.Windows.Forms;
 using FileOperations;
+using LanguageOperations;
 
 namespace Picture_Viewer
 {
     public partial class Viewer : Form
     {
-        AllSettings JsonAllSettings = new();
         bool nonNumberEntered = false;
         private string[] images;
         private int index;
+        string fileExtensions = @"*.bpm,*.jpg,*.jpeg,*.emf,*.exif,*.gif,*.icon,*.png,*.tiff,*.tif,*.wmf,*.jpe,*.jif,*.jfif,*.jfi,*.apng,*.mng,*.gfa,*.gifv,*.tf8,*.btf)|*.bmp; *.jpg; *.jpeg; *.emf; *.exif; *.gif; *.icon; *.png; *.tiff; *.tif; *.wmf; *.jpe; *.jif;*.jfif; *.jfi; *.apng; *.mng; *.gfa; *.gifv; *.tf8; *.btf";
 
         public Viewer(string fileName)
         {
             InitializeComponent();
             FileOperation.MainFile = "PictureViewer";
 
-            JsonAllSettings = FileOperation.GetDefaultSettings();
-
             FileOperation.ActualFolder = Directory.GetCurrentDirectory();
 
-            JsonAllSettings = FileOperation.ReadSettings();
+            FileOperation.ReadSettings();
+            FileOperation.allSettings.Settings.UsageCounter += 1;
 
-            JsonAllSettings.JsonSettings.UsageCounter += 1;
+            Language.ReadLanguage(FileOperation.allSettings.Settings.UsedLanguage);
+
+            SetGUI();
+            SetLanguage();
 
             if (!string.IsNullOrEmpty(fileName))
             {
@@ -43,7 +46,7 @@ namespace Picture_Viewer
                 {
                     OpenFileDialog openFileDialog = new()
                     {
-                        Filter = @"Picture files (*.bpm,*.jpg,*.jpeg,*.emf,*.exif,*.gif,*.icon,*.png,*.tiff,*.tif,*.wmf,*.jpe,*.jif,*.jfif,*.jfi,*.apng,*.mng,*.gfa,*.gifv,*.tf8,*.btf)|*.bmp; *.jpg; *.jpeg; *.emf; *.exif; *.gif; *.icon; *.png; *.tiff; *.tif; *.wmf; *.jpe; *.jif; *.jfif; *.jfi; *.apng; *.mng; *.gfa; *.gifv; *.tf8; *.btf"
+                        Filter = $@"Picture files ({fileExtensions})"
                     };
                     openFileDialog.ShowDialog();
                     if (openFileDialog.FileName != "")
@@ -58,13 +61,11 @@ namespace Picture_Viewer
                     GetFilesInFolder(FileOperation.LastPath);
                 }
             }
-
-            SetGUI();
         }
 
         private void SetGUI()
         {
-            switch (JsonAllSettings.JsonInterface.FullScreen)
+            switch (FileOperation.allSettings.Interface.FullScreen)
             {
                 case "Normal":
                     WindowState = FormWindowState.Normal;
@@ -81,9 +82,25 @@ namespace Picture_Viewer
                 default: break;
             }
 
-            Width = JsonAllSettings.JsonInterface.WindowWith;
-            Height = JsonAllSettings.JsonInterface.WindowHeight;
-            Location = new Point(JsonAllSettings.JsonInterface.StartPositionX, JsonAllSettings.JsonInterface.StartPositionY);
+            Width = FileOperation.allSettings.Interface.WindowWith;
+            Height = FileOperation.allSettings.Interface.WindowHeight;
+            Location = new Point(FileOperation.allSettings.Interface.StartPositionX, FileOperation.allSettings.Interface.StartPositionY);
+        }
+
+        private void SetLanguage()
+        {
+            this.Text = Language.allLanguageItems.Text.Title;
+            MenuItemFile.Text = Language.allLanguageItems.Text.MenuFile;
+            SubMenuItemOpen.Text = $"{Language.allLanguageItems.Text.Open}...";
+            SubMenuItemExit.Text = Language.allLanguageItems.Text.Exit;
+
+            MenuItemLanguage.Text = Language.allLanguageItems.Text.Language;
+
+            MenuItemSettings.Text = Language.allLanguageItems.Text.Settings;
+
+            MenuItemHelp.Text = Language.allLanguageItems.Text.Help;
+            SubMenuItemUpdate.Text = $"{Language.allLanguageItems.Text.Update}...";
+            SubMenuItemAbout.Text = $"{Language.allLanguageItems.Text.About}...";
         }
 
         private void GetFilesInFolder(string fileName)
@@ -113,56 +130,71 @@ namespace Picture_Viewer
                 // Stop the character from being entered into the control since it is non-numerical.
                 e.Handled = true;
             }
-
         }
 
         private void Viewer_KeyDown(object sender, KeyEventArgs e)
         {
             nonNumberEntered = false;
 
-            if (e.KeyCode == Keys.PageDown || e.KeyCode == Keys.Right || e.KeyCode == Keys.Space || e.KeyCode == Keys.Down)
+            switch (e.KeyCode)
             {
-                nonNumberEntered = true;
+                case Keys.PageDown:
+                case Keys.Right:
+                case Keys.Space:
+                case Keys.Down:
+                    nonNumberEntered = true;
 
-                if (index == 0)
-                {
-                    index = images.Length - 1;
-                }
-                else
-                {
-                    index--;
-                }
-            }
-            else if (e.KeyCode == Keys.PageUp || e.KeyCode == Keys.Left || e.KeyCode == Keys.Back || e.KeyCode == Keys.Up)
-            {
-                nonNumberEntered = true;
-
-                if (index == (images.Length - 1))
-                {
-                    index = 0;
-                }
-                else
-                {
-                    index++;
-                }
-            }
-            else if (e.KeyCode == Keys.Delete)
-            {
-                nonNumberEntered = true;
-
-                for (int i = 0; i < images.Length; i++)
-                {
-                    if (i >= index)
+                    if (index == 0)
                     {
-                        images[i] = images[i + 1];
+                        index = images.Length - 1;
+                    }
+                    else
+                    {
+                        index--;
+                    }
+                    break;
 
-                        if (i == images.Length - 1)
+                case Keys.PageUp:
+                case Keys.Left:
+                case Keys.Back:
+                case Keys.Up:
+                    nonNumberEntered = true;
+
+                    if (index == (images.Length - 1))
+                    {
+                        index = 0;
+                    }
+                    else
+                    {
+                        index++;
+                    }
+                    break;
+
+                case Keys.Delete:
+                    nonNumberEntered = true;
+
+                    for (int i = 0; i < images.Length; i++)
+                    {
+                        if (i >= index)
                         {
-                            images[i] = "";
-                            Array.Resize<string>(ref images, i - 1);
+                            images[i] = images[i + 1];
+
+                            if (i == images.Length - 1)
+                            {
+                                images[i] = "";
+                                Array.Resize<string>(ref images, i - 1);
+                            }
                         }
                     }
-                }
+                    break;
+
+                case Keys.Escape:
+                    nonNumberEntered = true;
+                    Viewer_FormClosing(this, null);
+                    break;
+
+                default:
+                    break;
             }
 
             LoadNewImage();
@@ -177,21 +209,27 @@ namespace Picture_Viewer
             }
         }
 
-        private void Viewer_FormClosing(object sender, FormClosingEventArgs e)
+        private void Viewer_FormClosing(object sender, FormClosingEventArgs? e)
         {
-            FileOperation.WriteSettings(JsonAllSettings);
+            FileOperation.WriteSettings();
         }
 
         private void Viewer_LocationChanged(object sender, EventArgs e)
         {
-            JsonAllSettings.JsonInterface.StartPositionX = Location.X;
-            JsonAllSettings.JsonInterface.StartPositionY = Location.Y;
+            FileOperation.allSettings.Interface.StartPositionX = Location.X;
+            FileOperation.allSettings.Interface.StartPositionY = Location.Y;
         }
 
         private void Viewer_ResizeEnd(object sender, EventArgs e)
         {
-            JsonAllSettings.JsonInterface.WindowWith = Width;
-            JsonAllSettings.JsonInterface.WindowHeight = Height;
+            FileOperation.allSettings.Interface.WindowWith = Width;
+            FileOperation.allSettings.Interface.WindowHeight = Height;
+        }
+
+        private void ExitSubMenuItem_Click(object sender, EventArgs e)
+        {
+            Viewer_FormClosing(this, null);
+            Close();
         }
     }
 }
